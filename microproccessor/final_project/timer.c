@@ -52,6 +52,7 @@ void main(void)
     PORTBbits.RB1 = 0;//signal to grade
 
     while (PORTBbits.RB0 == 1);
+     __delay_ms(200);
     T0CONbits.TMR0ON = 1;//if button is clicked, timer is on
 
     int count_time = 60;
